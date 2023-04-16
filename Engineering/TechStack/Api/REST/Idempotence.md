@@ -1,0 +1,3 @@
+# Idempotence in software development
+
+Work in progress...

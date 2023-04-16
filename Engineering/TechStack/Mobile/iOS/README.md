@@ -1,0 +1,3 @@
+# This is the home of iOS development standards
+
+Work in progress...
