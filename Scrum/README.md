@@ -76,5 +76,5 @@ The Sprint Retrospective is an opportunity for the Scrum Team to inspect itself 
 ## 2.3 Scrum Team
 
 - PO (Product owner) : [PO](./Team/PO/README.md).
-- Scrum Master
+- Scrum Master // Besoj se kjo duhet hequr
 - Development team (Self organized, cross-functional team)
