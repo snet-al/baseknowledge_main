@@ -14,3 +14,8 @@ Many criteria apply to all or many Product Backlog items. Instead of repeatedly 
 > - Completed QA tests
 
 > - Completed documentation
+
+
+### Single Source of TRUTH
+
+TODO: @dea
