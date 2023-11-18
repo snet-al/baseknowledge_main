@@ -63,7 +63,7 @@
 
 `develop`
 
-- `develop` (or we can call it the integration branch) .It is first created after `master` and after creating it, it never has to interact with `master` again. `develop` is where we create our branches off.
+- `develop` (or we can call it the integration branch) .It is first created after `main` and after creating it, it never has to interact with `main` again. `develop` is where we create our branches off.
 
 - Your “working” code
 
