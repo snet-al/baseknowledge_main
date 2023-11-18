@@ -53,7 +53,7 @@
 
 ### Base branches
 
-`master`
+`main`
 
 - Represents our project that is live.
 
