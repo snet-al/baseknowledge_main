@@ -62,17 +62,7 @@ A test case is a set of actions that verify whether the software application is 
 
 **Actual result -** This field should define what you is actual results so that you determine if the test passes or fails.
 
-**Expected result** - This field should define what you expect to see and is how you determine if the test passes or fails.
 
-**Actual result** - This field should define what the actual results are so that you determine if the test passes or fails.
-
-| **Test Case ID** | **Test case Description/Summary** | **Pre-condition** | **Test steps** | **Test Data** | **Expected result** | **Actual result** |
-| ---------------- | --------------------------------- | ----------------- | -------------- | ------------- | ------------------- | ----------------- |
-
-|
-**TU01** | **Check user login when email ID and password are entered** | [**https://id.testsigma.com/ui/login**](https://id.testsigma.com/ui/login)is opened | **1.Enter email ID**
-**2. Enter password**
-**3. Click submit** | **Email –
-sample@gmail.com
-Password –
-Sample@123 **|** User should be able to login **|** Login was successful** |
+| Test Case ID | Test case Description/Summary                               | Pre-condition                              | Test steps                                                                      | Test Data                                      | Expected result              | Actual result        |
+|--------------|-------------------------------------------------------------|--------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------|------------------------------|----------------------|
+| TU01         | Check user  login when  email ID and  password are  entered | https://id.testsigma.com/ui/loginis opened | 1.Enter email ID 2. Enter password 3. Click submit User should be able to login | Email – sample@gmail.com Password – Sample@123 | User should be able to login | Login was successful |
