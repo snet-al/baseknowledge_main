@@ -58,7 +58,7 @@ A test case is a set of actions that verify whether the software application is 
 
 **Test data** refers to the input data or values required to execute the test case. For example, username and password are the test data to test the email login.
 
-**Expected result -** This field should define what you expect to see and is how you determine if the test passes or fails
+**Expected result -** This field should define what you expect to see and is how you determine if the test passes or fails.
 
 **Actual result -** This field should define what you is actual results so that you determine if the test passes or fails.
 
