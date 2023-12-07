@@ -4,7 +4,7 @@
 
 #### Description:
 
-This is an example of an user story, how it can be written, organized with some best practises.
+This is an example of a user story, how it can be written, organized with some best practises.
 <br>
 The user story is a general example of a product backlog item, because some other examples may be _technical work_, _bugs_, _use cases_, etc, but all, is best practise to share the same methodology of communication.
 <br>
