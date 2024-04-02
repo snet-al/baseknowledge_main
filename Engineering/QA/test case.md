@@ -30,7 +30,7 @@ A test case is a set of actions that verify whether the software application is 
 
 **Expected result -** This field should define what you expect to see and is how you determine if the test passes or fails.
 
-**Actual result -** This field should define what you is actual results so that you determine if the test passes or fails
+**Actual result -** This field should define what you is actual results so that you determine if the test passes or fails.
 
 
 | Test Case ID | Test case Description/Summary                               | Pre-condition                              | Test steps                                                                      | Test Data                                      | Expected result              | Actual result        |
