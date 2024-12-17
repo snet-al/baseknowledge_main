@@ -6,6 +6,7 @@
 
 The Product Owner is responsible for maximizing the value of the product resulting from work of the Development Team.
 The Product Owner is the sole person responsible for managing the Product Backlog.
+The Product Owner is the person responsible for the communication between the team members, if the Scrum Master is absent or the PO and Scrum Master are one person. 
 
 Product Backlog management includes:
 
