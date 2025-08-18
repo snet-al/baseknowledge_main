@@ -12,45 +12,49 @@
 
 ## 2) Canonical patterns
 
-### Project-scoped (deployable)
+### Project-scoped (deployable apps)
 
 ```
-pr_{project}-{app}
+pr_{project}_app_{runtime}
 ```
 
-* `project`: short slug (lowercase kebab), e.g. `mjedisi`, `platform`, `akm`
-* `app`: runtime type or name: `api`, `web`, `worker`, `console`, `gateway`
+* `project`: short slug (lowercase, underscores only if compound), e.g. `mjedisi`, `platform`, `akm`
+* `runtime`: app type or runtime: `api`, `web`, `console`, `front-react`, `worker`, `gateway`
 
 **Examples**
 
 ```
-pr_mjedisi-api
-pr_mjedisi-console
-pr_platform-worker
+pr_mjedisi_app_api
+pr_mjedisi_app_console
+pr_platform_app_front-react
 ```
 
-### Platform (org-wide) deployables
+---
+
+### Platform (org-wide deployable apps)
 
 ```
-pf_{domain}-{service}
+pf_{domain}_app_{runtime}
 ```
 
 * `domain`: business/tech area: `user`, `auth`, `notify`, `files`, `ui`, `devops`
-* `service`: runtime kind or role: `api`, `gateway`, `scheduler`, `shell`, `registry`
+* `runtime`: runtime kind or role: `api`, `gateway`, `shell`, `scheduler`, `front-react`
 
 **Examples**
 
 ```
-pf_user-api
-pf_auth-gateway
-pf_ui-shell
-pf_notify-scheduler
+pf_user_app_api
+pf_auth_app_gateway
+pf_ui_app_shell
+pf_notify_app_scheduler
 ```
+
+---
 
 ### Reusable packages (non-deployable)
 
 ```
-pkg_{domain}-{name}[-{lang|stack}]
+pkg_{domain}_{name}[_{lang|stack}]
 ```
 
 * Optional language/stack suffix when useful: `ts`, `py`, `cs`, `java`, `react`, `nest`
@@ -58,10 +62,10 @@ pkg_{domain}-{name}[-{lang|stack}]
 **Examples**
 
 ```
-pkg_ui-components-react
-pkg_user-sdk-ts
-pkg_auth-client-cs
-pkg_core-logging
+pkg_ui_components_react
+pkg_user_sdk_ts
+pkg_auth_client_cs
+pkg_core_logging
 ```
 
 ---
@@ -70,13 +74,13 @@ pkg_core-logging
 
 1. **Is it directly deployable?**
 
-   * **Yes** → Go to 2
-   * **No** → `pkg_{domain}-{name}[-{lang}]`
+   * **Yes** → use `*_app_*`
+   * **No** → use `pkg_{domain}_{name}`
 
-2. **Used by multiple projects?**
+2. **Does it serve multiple projects?**
 
-   * **Yes** → `pf_{domain}-{service}`
-   * **No, belongs to one project** → `pr_{project}-{app}`
+   * **Yes** → `pf_{domain}_app_{runtime}`
+   * **No** → `pr_{project}_app_{runtime}`
 
 ---
 
@@ -84,117 +88,56 @@ pkg_core-logging
 
 **Do**
 
-* Use **lowercase kebab-case** for all tokens after the prefix.
-* Keep names **short & semantic** (`api`, `web`, `worker`, `sdk`, `components`).
-* Add **registry scopes** for code packages (npm, PyPI, NuGet) — see §7.
+* Always include `_app_` for deployables.
+* Use **underscores** for separation, **hyphens only inside runtime/stack suffix** (`front-react`).
+* Keep runtime tokens **short & semantic** (`api`, `web`, `console`, `worker`).
+* Use registry scopes for published code packages.
 
 **Don’t**
 
-* Don’t mix underscores after the prefix (stick to kebab afterwards).
-* Don’t use reserved prefixes (`pr_`, `pf_`, `pkg_`) as project names.
-* Don’t encode environment (`-dev`, `-prod`) in repo names — use branches/CI.
+* Don’t mix underscores and hyphens except inside stack identifiers.
+* Don’t append environment (`_dev`, `_prod`) to repo names — use CI/branches.
 
 ---
 
-## 5) Regex checkers (for a pre-commit hook)
+## 5) Regex checkers
 
 ```regex
 # project deployables
-^pr_[a-z0-9]+(-[a-z0-9]+)*-(api|web|worker|console|gateway|shell|scheduler)$
+^pr_[a-z0-9]+(_[a-z0-9]+)*_app_(api|web|console|front-react|worker|gateway|shell|scheduler)$
 
 # platform deployables
-^pf_[a-z0-9]+(-[a-z0-9]+)*-(api|web|worker|gateway|shell|scheduler|registry)$
+^pf_[a-z0-9]+(_[a-z0-9]+)*_app_(api|web|console|front-react|worker|gateway|shell|scheduler)$
 
 # packages
-^pkg_[a-z0-9]+(-[a-z0-9]+)*-[a-z0-9]+(-[a-z0-9]+)*$
+^pkg_[a-z0-9]+(_[a-z0-9]+)*(_[a-z0-9]+)*(_(ts|py|cs|java|react|nest))?$
 ```
 
 ---
 
 ## 6) Common examples (matrix)
 
-| Type                  | Example                   | Notes                  |
-| --------------------- | ------------------------- | ---------------------- |
-| Project API           | `pr_mjedisi-api`          | Single-project backend |
-| Project Web           | `pr_mjedisi-web`          | SPA/SSR                |
-| Platform User API     | `pf_user-api`             | Shared authn/profile   |
-| Platform Auth Gateway | `pf_auth-gateway`         | Reverse proxy/OPA      |
-| Platform UI Shell     | `pf_ui-shell`             | Micro-frontend host    |
-| UI Components         | `pkg_ui-components-react` | Reusable React lib     |
-| User SDK (TS)         | `pkg_user-sdk-ts`         | Published to npm       |
-| Logging Core          | `pkg_core-logging`        | Lang-agnostic design   |
+| Type                  | Example                       | Notes                    |
+| --------------------- | ----------------------------- | ------------------------ |
+| Project API           | `pr_mjedisi_app_api`          | Project backend service  |
+| Project Console       | `pr_mjedisi_app_console`      | SPA/SSR front            |
+| Project React Front   | `pr_platform_app_front-react` | Explicit React runtime   |
+| Platform User API     | `pf_user_app_api`             | Shared authn/profile     |
+| Platform Auth Gateway | `pf_auth_app_gateway`         | Reverse proxy/OPA        |
+| Platform UI Shell     | `pf_ui_app_shell`             | Micro-frontend host      |
+| Platform Scheduler    | `pf_notify_app_scheduler`     | Worker/scheduler process |
+| UI Components         | `pkg_ui_components_react`     | Reusable React lib       |
+| User SDK (TS)         | `pkg_user_sdk_ts`             | Published to npm         |
+| Logging Core          | `pkg_core_logging`            | Lang-agnostic design     |
 
 ---
 
-## 7) Package publishing (by ecosystem)
+## 10) Migration guide (from your old scheme)
 
-* **npm**: `@org/{domain}-{name}`
-
-  * Repo: `pkg_user-sdk-ts` → Package: `@org/user-sdk`
-* **PyPI**: `org-{domain}-{name}`
-
-  * `org-user-sdk`
-* **NuGet**: `Org.{Domain}.{Name}`
-
-  * `Org.User.Sdk`
-* **Docker**: `ghcr.io/org/{repo}:{tag}`
-
-  * `ghcr.io/org/pf_user-api:1.4.0`
-
-> Keep repo **name** stable; adapt published **package** name to ecosystem norms.
-
----
-
-## 8) Tags, branches, and topics
-
-* **Tags**: SemVer (`v1.4.0`). For mono-pkg repos, plain tags; for multi-pkg (rare here), use Changesets.
-* **Branches**: `main` (protected), feature branches `feat/*`, `fix/*`.
-* **Topics** (GitHub): `scope:project|platform|package`, `domain:user|ui|auth`, `type:api|sdk|components`.
-
----
-
-## 9) README header template (copy/paste)
-
-```
-# pf_user-api
-
-**Scope**: platform (org-wide)  
-**Domain**: user  
-**Type**: api (deployable)  
-
-- Contract: `openapi/openapi.yaml`
-- Image: `ghcr.io/<org>/pf_user-api`
-- Envs: `/deploy/helm/values*.yaml`
-- Changelog: `CHANGELOG.md`
-```
-
-(Adjust for `pr_*` and `pkg_*` accordingly.)
-
----
-
-## 10) Migration guide (from your current scheme)
-
-| Old                      | New                       |
-| ------------------------ | ------------------------- |
-| `pr_mjedisi_app_api`     | `pr_mjedisi-api`          |
-| `pr_mjedisi_app_console` | `pr_mjedisi-console`      |
-| Global user service      | `pf_user-api`             |
-| Global UI components     | `pkg_ui-components-react` |
-| Global user SDK (TS)     | `pkg_user-sdk-ts`         |
-
-**CI tip:** introduce a `repo-map.json` to keep pipelines working during the rename window.
-
----
-
-## 11) Enforcement aids
-
-* Add a simple **lint GitHub Action** that checks repo name against §5 regex.
-* Provide a `bin/create-repo` script that scaffolds README, topics, branch protections using the chosen pattern.
-
----
-
-If you want, I can generate:
-
-* a ready-to-use **GitHub Action** for name linting, and
-* a tiny **CLI scaffold** (`create-repo.mjs`) that enforces this taxonomy interactively.
-
+| Old                      | New (aligned `_app_`)              |
+| ------------------------ | ---------------------------------- |
+| `pr_mjedisi_app_api`     | `pr_mjedisi_app_api` (unchanged ✅) |
+| `pr_mjedisi_app_console` | `pr_mjedisi_app_console`           |
+| Global user service      | `pf_user_app_api`                  |
+| Global UI components     | `pkg_ui_components_react`          |
+| Global user SDK (TS)     | `pkg_user_sdk_ts`                  |
