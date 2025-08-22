@@ -1,10 +1,4 @@
-Got it 👍 — you want to embed the **new philosophy** into the doc, where the **Project Manager (PM)** is the **first entry point** for requirements, and **Cost Estimation (CE)** depends on a structured breakdown prepared by Tech Leads/CTO/Team Leads.
-
-Here’s the **updated version** of the framework with your new principle integrated:
-
----
-
-# 📑 Standardized Project Initiation Framework (Updated with CE Flow)
+# 📑 Standardized Project Initiation Framework
 
 ## 1. Centralized Knowledge Base
 
@@ -139,4 +133,5 @@ Here’s the **updated version** of the framework with your new principle integr
 * **PM is always the first entry point**.
 * **CE cannot exist without a structured breakdown**.
 * **Company-wide task unit chart ensures consistency** across all estimates.
+
 
