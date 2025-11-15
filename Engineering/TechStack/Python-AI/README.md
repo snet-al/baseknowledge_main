@@ -7,7 +7,7 @@ This module is a structured learning path for beginners to go from Python fundam
 2. **Data Libraries**: Master Pydantic, Pandas and NumPy.
 3. **AI Agents**: Run local LLMs using Ollama and orchestrate with LangGraph.
 4. **Deep Learning Frameworks**: Get hands-on with TensorFlow and PyTorch.
-5. **ML & AI Theory**: Understand supervised, unsupervised, reinforcement learning, and hybrid methods. Learn classical and deep learning models.
+5. **ML & AI Theory**: Understand core concepts of Artificial Intelligence and Machine Learning. Learn about classical and deep learning models structures and functionality.
 
 ## How to navigate
 

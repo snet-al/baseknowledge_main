@@ -7,23 +7,10 @@ This directory contains a comprehensive Jupyter notebook for learning **Pandas**
 **[Python_Tutorial_Pandas.ipynb](./Python_Tutorial_Pandas.ipynb)** is a complete tutorial covering:
 
 ### 1. **Creating Pandas DataFrame**
-   - Creating DataFrame from lists of lists
-   - Creating DataFrame using dictionaries
-   - Creating DataFrame from files (CSV files from local drive, Google Drive, and URLs)
 
 ### 2. **Pandas DataFrame Standard Operations**
-   - DataFrame general description and information
-   - Creating sub-DataFrames by selections
-   - Filtering DataFrames
-   - Using aggregate methods (mean, sum, min, max, etc.)
-   - Data normalization for machine learning
 
 ### 3. **Practical Tasks**
-   - Task 1: Student grades analysis (mean, median calculations)
-   - Task 2: Row selection operations
-   - Task 3: Filtering students above average
-   - Task 4: Calculating grade percentages
-   - Task 5: Loading and working with the Iris dataset
 
 ## Dataset Files
 
@@ -41,7 +28,6 @@ These files are used throughout the notebook examples. You can use them to pract
 After completing this tutorial, you can:
 - Explore more advanced Pandas operations
 - (Bonus) Learn about data visualization with Matplotlib or Seaborn
-- Check out other tutorials in the [Python AI Libraries](../) directory
 
 Happy learning! 📊🐼
 

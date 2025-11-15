@@ -61,7 +61,7 @@ LangGraph is a library for building stateful, multi-actor applications with LLMs
 - Take the free [LangChain Academy course](https://academy.langchain.com/courses/intro-to-langgraph) for a structured learning path 
 - Reference the [LangGraph documentation](https://langchain-ai.github.io/langgraph/) for detailed API information
 - Explore the [agent-service-toolkit](https://github.com/JoshuaC215/agent-service-toolkit) for a complete production example using LangGraph, FastAPI, and Streamlit. This repository shows how to:
-  - Set up LangGraph agents with Ollama support
+  - Set up LangGraph agents (including with Ollama support)
   - Build a FastAPI service for agent deployment
   - Create a Streamlit chat interface
   - Implement streaming, memory, and human-in-the-loop features

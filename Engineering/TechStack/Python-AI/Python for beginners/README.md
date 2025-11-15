@@ -34,13 +34,6 @@ This directory includes **four comprehensive Jupyter notebooks** (`.ipynb` files
    - Modules and packages
    - Installing packages with pip
 
-### About Saved Outputs
-
-All notebooks include **saved outputs** for each code cell. This means:
-- You can view the expected results without running the code
-- The outputs are preserved when viewing on GitHub or locally
-- You can see what each example produces before trying it yourself
-
 **Note**: When you run the notebooks yourself, you'll get fresh outputs. The saved outputs serve as reference examples.
 
 ### How to Use the Notebooks
@@ -63,8 +56,7 @@ PyCharm is a powerful IDE specifically designed for Python development.
 ###### Running Jupyter Notebooks in PyCharm
 1. Install Jupyter: `pip install jupyter`
 2. Open a `.ipynb` file in PyCharm
-3. PyCharm will automatically detect it and allow you to run cells
-4. You can run individual cells or the entire notebook
+3. PyCharm will automatically detect it and allow you to run the code
 
 ## YouTube Tutorials
 

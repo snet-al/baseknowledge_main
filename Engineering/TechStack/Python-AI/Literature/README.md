@@ -50,11 +50,13 @@ Key components: **Self-Attention Mechanism** (weighs importance of different wor
 
 Transformers enable **parallelization** (processing entire sequences simultaneously, unlike sequential RNNs), capture **long-range dependencies** between distant words, **scale** well with more parameters and data, and support **transfer learning** (fine-tuning pre-trained models for specific tasks).
 
-**Resources to learn about Transformers:**
+**Resources to learn about Transformers and LLMs:**
 - **"Attention Is All You Need" Paper**: [Attention is all you need.pdf](./Attention%20is%20all%20you%20need.pdf) - The foundational paper by Vaswani et al. from Google Research (available in this directory)
-- **Video Tutorials**:
-  - [Transformers Explained Visually](https://www.youtube.com/watch?v=wjZofJX0v4M) - Visual explanation of transformer architecture
-  - [The Transformer Architecture](https://www.youtube.com/watch?v=eMlx5fFNoYc) - Detailed walkthrough of how transformers work
+- **Video Resources**:
+  - [LMMs Explained Briefly]((https://www.youtube.com/watch?v=LPZh9BOjkQs))
+  - [Transformers,The Tech Behind LLMs](https://www.youtube.com/watch?v=wjZofJX0v4M)
+  - [Attention in Transformers](https://www.youtube.com/watch?v=eMlx5fFNoYc)
+  - [How LLMs Store Facts](https://www.youtube.com/watch?v=9-Jl0dxWQs8)
 
 LLM processing steps: **tokenization** (breaking text into tokens), **embedding** (converting tokens to numerical representations with positional encoding), **transformer processing** (multiple layers refining text understanding), **attention** (capturing relationships between all tokens in the sequence), **prediction** (generating the next most likely token), and **generation** (producing complete text responses token by token).
 
@@ -75,57 +77,51 @@ LLM capabilities include text generation, question answering, translation, summa
 
 ### Supervised Learning
 
-**Supervised Learning** is a type of machine learning where the algorithm learns from labeled training data (input-output pairs). The model learns to map inputs to outputs by adjusting parameters to minimize prediction errors and generalize to unseen data.
+**Supervised Learning** learns from labeled training data (input-output pairs), mapping inputs to outputs by minimizing prediction errors.
 
-Two main types: **classification** (predicts discrete categories: spam/not spam, image classification, email spam detection, medical diagnosis, sentiment analysis) and **regression** (predicts continuous values: price, temperature, sales, house prices, stock prices, weather).
+Two main types: **classification** (discrete categories: spam detection, image classification, medical diagnosis) and **regression** (continuous values: prices, temperature, sales).
 
-Common algorithms used in supervised learning include linear and logistic regression for simple relationships, decision trees and random forests for non-linear patterns, Support Vector Machines (SVM) for classification tasks, neural networks for complex patterns, and k-Nearest Neighbors (k-NN) for instance-based learning.
+Common algorithms: linear/logistic regression, decision trees, random forests, SVMs, neural networks, k-NN.
 
-Supervised learning offers clear performance metrics (accuracy, precision, recall) and well-understood, interpretable results. It's particularly effective when labeled data is available. However, it requires large amounts of labeled data, and labeling data can be expensive and time-consuming. Additionally, models may not generalize well if training data is biased or not representative of the real-world distribution.
+Advantages: clear performance metrics (accuracy, precision, recall), interpretable results. Disadvantages: requires large amounts of labeled data (expensive to obtain), may not generalize if training data is biased or unrepresentative.
 
 ---
 
 ### Unsupervised Learning
 
-**Unsupervised Learning** is a type of machine learning where the algorithm learns patterns from unlabeled data without any guidance about correct outputs.
+**Unsupervised Learning** learns patterns from unlabeled data without guidance about correct outputs. Goal: discover hidden patterns, structures, or relationships.
 
-In unsupervised learning, the training data has no target outputs. The goal is to discover hidden patterns, structures, or relationships in the data without predefined objectives.
+Three main types: **Clustering** (grouping similar data points: customer segmentation, anomaly detection; algorithms: K-means, hierarchical clustering, DBSCAN), **Dimensionality reduction** (reducing features while preserving information: PCA, t-SNE, autoencoders), **Association rule learning** (finding variable relationships: market basket analysis, recommendations; algorithms: Apriori, FP-growth).
 
-There are three main types of unsupervised learning. **Clustering** involves grouping similar data points together, with examples including customer segmentation, image compression, and anomaly detection. Common clustering algorithms include K-means, hierarchical clustering, and DBSCAN. **Dimensionality reduction** reduces the number of features while preserving important information, useful for data visualization, feature extraction, and noise reduction. Algorithms for this include Principal Component Analysis (PCA), t-SNE, and autoencoders. **Association rule learning** finds relationships between variables, commonly used in market basket analysis and recommendation systems, with algorithms like Apriori and FP-growth.
-
-The advantages of unsupervised learning include no need for labeled data (making it cheaper and faster), the ability to discover unexpected patterns, and usefulness for exploratory data analysis. However, it's harder to evaluate performance since there's no ground truth, results may be difficult to interpret, and the algorithm may find patterns that aren't meaningful or useful.
+Advantages: no labeled data needed (cheaper, faster), discovers unexpected patterns, useful for exploratory analysis. Disadvantages: harder to evaluate (no ground truth), results may be difficult to interpret, may find meaningless patterns.
 
 ---
 
 ### Semi-Supervised Learning
 
-**Semi-Supervised Learning** is a hybrid approach that uses both labeled and unlabeled data for training. It's particularly useful when labeled data is scarce or expensive to obtain.
+**Semi-Supervised Learning** combines small amounts of labeled data with large amounts of unlabeled data. Assumes unlabeled data contains useful information about the data distribution.
 
-This method combines small amounts of labeled data with large amounts of unlabeled data. The assumption is that unlabeled data contains useful information about the data distribution that can enhance learning.
+Common approaches: **self-training** (model labels unlabeled data using high-confidence predictions), **co-training** (multiple models on different data views), **graph-based methods** (relationships between labeled/unlabeled points), **generative models** (learn data distribution to improve classification).
 
-Common approaches to semi-supervised learning include **self-training**, where the model labels unlabeled data and uses high-confidence predictions for further training; **co-training**, which involves multiple models trained on different views of the data; **graph-based methods** that use relationships between labeled and unlabeled data points; and **generative models** that learn the data distribution to improve classification.
+Useful when labeling is expensive: medical image analysis, speech recognition, text classification, web content categorization.
 
-Semi-supervised learning is useful when labeling is expensive or time-consuming: medical image analysis, speech recognition, text classification, and web content categorization.
-
-The advantages include reducing the need for expensive labeled data, potentially improving performance over supervised learning with limited labels, and being practical for real-world scenarios where labeled data is scarce. However, it's more complex than pure supervised learning, requires careful handling of unlabeled data, and performance depends heavily on the quality of the unlabeled data.
+Advantages: reduces need for expensive labeled data, may improve performance over supervised learning with limited labels. Disadvantages: more complex than supervised learning, requires careful handling of unlabeled data, performance depends on unlabeled data quality.
 
 ---
 
 ### Reinforcement Learning
 
-**Reinforcement Learning (RL)** is a type of machine learning where an agent learns to make decisions by interacting with an environment and receiving rewards or penalties for its actions.
+**Reinforcement Learning (RL)** learns decision-making through agent-environment interaction, receiving rewards or penalties for actions.
 
-Reinforcement learning involves **agent-environment interaction** (agent takes actions, environment responds), **reward signals** (feedback about action quality), **trial and error** (exploring actions and exploiting known good strategies), and **delayed rewards** (actions may have consequences that appear later, requiring consideration of long-term outcomes).
+Core components: **agent** (learner/decision maker), **environment** (world the agent interacts with), **state** (current situation), **action**, **reward** (feedback signal), **policy** (action selection strategy), **value function** (expected future rewards).
 
-Core components: **agent** (learner/decision maker), **environment** (world the agent interacts with), **state** (current situation or observation), **action** (what the agent does), **reward** (feedback signal), **policy** (strategy for choosing actions), and **value function** (expected future rewards).
+Key concepts: **exploration vs. exploitation** trade-off, **Markov Decision Process (MDP)** (mathematical framework), **Q-learning** (learns action values), **policy gradients** (optimize policy directly).
 
-Key concepts: **exploration vs. exploitation** trade-off (balancing trying new actions versus using known good actions), **Markov Decision Process (MDP)** (mathematical framework for RL), **Q-learning** (method for learning action values), and **policy gradients** (directly optimize the policy).
+Types: **Model-based RL** (learns environment model), **model-free RL** (learns from experience), **value-based methods** (e.g., Q-learning), **policy-based methods** (e.g., REINFORCE), **Actor-Critic methods** (combine value and policy).
 
-Types of reinforcement learning: **Model-based RL** (agent learns a model of the environment), **model-free RL** (agent learns directly from experience), **value-based methods** (learn value functions, e.g., Q-learning), **policy-based methods** (learn policies directly, e.g., REINFORCE), and **Actor-Critic methods** (combine value and policy approaches).
+Applications: game playing (Chess, Go, video games), robotics, autonomous systems, recommendation systems, resource management, trading algorithms, autonomous vehicles.
 
-Reinforcement learning has found applications in game playing (Chess, Go, video games), robotics and autonomous systems, recommendation systems, resource management, trading algorithms, and autonomous vehicles.
-
-The advantages of reinforcement learning include the ability to learn complex behaviors, adaptation to changing environments, no need for labeled training data, and the potential to discover novel strategies. However, it requires many interactions with the environment, can be slow to converge, reward design is critical and difficult, and there are safety concerns in real-world applications.
+Advantages: learns complex behaviors, adapts to changing environments, no labeled data needed, discovers novel strategies. Disadvantages: requires many environment interactions, slow convergence, reward design is critical and difficult, safety concerns in real-world applications.
 
 ---
 
