@@ -33,6 +33,8 @@ Also ClickUp will be the tool for managing the execution phase of the projects. 
 
 3. FRONTEND (ENGINEERING)
 
+- 3.1. Full Stack JavaScript Course ([The Odin Project](https://www.theodinproject.com/paths/full-stack-javascript)) - Covering HTML, CSS (intermediate and advanced), JavaScript, React, Databases, NodeJS.
+
 4. BACKEND (ENGINEERING)
 
 5. QA (ENGINEERING)
