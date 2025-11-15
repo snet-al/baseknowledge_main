@@ -62,7 +62,7 @@ Key components: **Self-Attention Mechanism** (weighs importance of different wor
 Transformers enable **parallelization** (processing entire sequences simultaneously, unlike sequential RNNs), capture **long-range dependencies** between distant words, **scale** well with more parameters and data, and support **transfer learning** (fine-tuning pre-trained models for specific tasks).
 
 **Resources to learn about Transformers and LLMs:**
-- **"Attention Is All You Need" Paper**: [Attention is all you need.pdf](./Attention%20is%20all%20you%20need.pdf) - The foundational paper by Vaswani et al. from Google Research (available in this directory)
+- **["Attention Is All You Need"](./Attention%20is%20all%20you%20need.pdf)** - The foundational paper by Vaswani et al. from Google Research (available in this directory)
 - **Video Resources**:
   - [LMMs Explained Briefly](https://www.youtube.com/watch?v=LPZh9BOjkQs)
   - [Transformers,The Tech Behind LLMs](https://www.youtube.com/watch?v=wjZofJX0v4M)
@@ -135,7 +135,7 @@ Advantages: learns complex behaviors, adapts to changing environments, no labele
 
 **Convolutional Neural Networks (CNNs)** are neural networks for processing grid-like data such as images. They use convolutional layers (applying filters to detect features), pooling layers (dimensionality reduction), and fully connected layers (classification). CNNs learn hierarchical features from pixels to complex objects, making them effective for image recognition, object detection, and computer vision. For a more detailed explanation, read this [article](https://colah.github.io/posts/2014-07-Conv-Nets-Modular/).
 
-**Recurrent Neural Networks (RNNs)** are designed to handle sequential data by maintaining a hidden state that captures information from previous inputs. Unlike feedforward networks, RNNs have connections that form cycles, allowing them to process sequences of variable length. However, traditional RNNs suffer from the vanishing gradient problem, making it difficult to learn long-term dependencies in sequences. RNNs are used for tasks like time series prediction, language modeling, and sequence-to-sequence tasks. For a deeper insight into how RNNs work, their limitations and how to overcome them, refer to [RNNs and LSTM.pdf](./RNNs%20and%20LSTM.pdf) available in this directory.
+**Recurrent Neural Networks (RNNs)** are designed to handle sequential data by maintaining a hidden state that captures information from previous inputs. Unlike feedforward networks, RNNs have connections that form cycles, allowing them to process sequences of variable length. However, traditional RNNs suffer from the vanishing gradient problem, making it difficult to learn long-term dependencies in sequences. RNNs are used for tasks like time series prediction, language modeling, and sequence-to-sequence tasks. For a deeper insight into how RNNs work, their limitations and how to overcome them, refer to [RNNs and LSTM](./RNNs%20and%20LSTM.pdf) available in this directory.
 
 ### Transfer Learning
 
@@ -143,7 +143,7 @@ Advantages: learns complex behaviors, adapts to changing environments, no labele
 
 ### Neural Networks
 
-**Neural Networks** are computing systems inspired by biological neural networks. They consist of an **input layer** (receives data), **hidden layers** (process information through weighted connections), and an **output layer** (produces predictions). Networks learn through **weights and biases** (parameters adjusted during training) and **activation functions** (introduce non-linearity to learn complex patterns). For detailed study, refer to [Neural Networks.pdf](./Neural%20Networks.pdf) available in this directory.
+**Neural Networks** are computing systems inspired by biological neural networks. They consist of an **input layer** (receives data), **hidden layers** (process information through weighted connections), and an **output layer** (produces predictions). Networks learn through **weights and biases** (parameters adjusted during training) and **activation functions** (introduce non-linearity to learn complex patterns). For detailed study, refer to [Neural Networks](./Neural%20Networks.pdf) available in this directory.
 
 ---
 
@@ -151,9 +151,9 @@ Advantages: learns complex behaviors, adapts to changing environments, no labele
 
 This directory contains resources for deeper study:
 
-- **[Attention is all you need.pdf](./Attention%20is%20all%20you%20need.pdf)**: The foundational transformer paper by Vaswani et al. from Google Research
-- **[Neural Networks.pdf](./Neural%20Networks.pdf)**: Material on neural network architectures and principles
-- **[RNNs and LSTM.pdf](./RNNs%20and%20LSTM.pdf)**: Explanation of recurrent neural networks and long short-term memory networks
-- **Artificial Intelligence: A Modern Approach** (`[Global Edition] Stuart J. Russell, Peter Norvig - Artificial Intelligence_ A Modern Approach, 3rd Edition (2016, Pearson Education) - libgen.li.pdf`): Textbook covering AI fundamentals, search algorithms, knowledge representation, planning, machine learning, and more. Reference for understanding the theoretical foundations of artificial intelligence.
+- **[Attention is all you need](./Attention%20is%20all%20you%20need.pdf)**: The foundational transformer paper by Vaswani et al. from Google Research
+- **[Neural Networks](./Neural%20Networks.pdf)**: Material on neural network architectures and principles
+- **[RNNs and LSTM](./RNNs%20and%20LSTM.pdf)**: Explanation of recurrent neural networks and long short-term memory networks
+- **[Artificial Intelligence: A Modern Approach](./Artificial%20Intelligence%20A%20Modern%20Approach.pdf)**: Textbook covering AI fundamentals, search algorithms, knowledge representation, planning, machine learning, and more. Reference for understanding the theoretical foundations of artificial intelligence.
 
 ---
