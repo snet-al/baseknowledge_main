@@ -42,6 +42,17 @@ A **Large Language Model (LLM)** is a type of AI model trained on vast amounts o
 
 LLMs are characterized by their **scale** (billions or trillions of parameters), **pre-training** on large text corpora to learn general language patterns, **fine-tuning** for specific tasks, **context understanding** over long conversations, and **emergent abilities** not explicitly programmed during training.
 
+LLM processing steps: **tokenization** (breaking text into tokens), **embedding** (converting tokens to numerical representations with positional encoding), **transformer processing** (multiple layers refining text understanding), **attention** (capturing relationships between all tokens in the sequence), **prediction** (generating the next most likely token), and **generation** (producing complete text responses token by token).
+
+**Popular LLMs:**
+- **GPT (Generative Pre-trained Transformer)**: OpenAI's models (GPT-3, GPT-4)
+- **BERT (Bidirectional Encoder Representations from Transformers)**: Google's model
+- **LLaMA (Large Language Model Meta AI)**: Meta's open-source models
+- **Claude**: Anthropic's models
+- **Gemini**: Google's multimodal models
+
+LLM capabilities include text generation, question answering, translation, summarization, code generation, conversational AI, and few-shot learning. Limitations: they can generate incorrect or "hallucinated" information, reflect training data biases, are limited to knowledge from their training cutoff date, require significant computational resources, and can be sensitive to input phrasing.
+
 **The Transformer Architecture:**
 
 LLMs are built on the **Transformer architecture**, introduced in the 2017 paper "Attention Is All You Need" by Google researchers. Transformers replaced recurrent and convolutional neural networks with an attention mechanism.
@@ -53,21 +64,10 @@ Transformers enable **parallelization** (processing entire sequences simultaneou
 **Resources to learn about Transformers and LLMs:**
 - **"Attention Is All You Need" Paper**: [Attention is all you need.pdf](./Attention%20is%20all%20you%20need.pdf) - The foundational paper by Vaswani et al. from Google Research (available in this directory)
 - **Video Resources**:
-  - [LMMs Explained Briefly]((https://www.youtube.com/watch?v=LPZh9BOjkQs))
+  - [LMMs Explained Briefly](https://www.youtube.com/watch?v=LPZh9BOjkQs)
   - [Transformers,The Tech Behind LLMs](https://www.youtube.com/watch?v=wjZofJX0v4M)
   - [Attention in Transformers](https://www.youtube.com/watch?v=eMlx5fFNoYc)
   - [How LLMs Store Facts](https://www.youtube.com/watch?v=9-Jl0dxWQs8)
-
-LLM processing steps: **tokenization** (breaking text into tokens), **embedding** (converting tokens to numerical representations with positional encoding), **transformer processing** (multiple layers refining text understanding), **attention** (capturing relationships between all tokens in the sequence), **prediction** (generating the next most likely token), and **generation** (producing complete text responses token by token).
-
-**Popular LLMs:**
-- **GPT (Generative Pre-trained Transformer)**: OpenAI's models (GPT-3, GPT-4)
-- **BERT (Bidirectional Encoder Representations from Transformers)**: Google's model
-- **LLaMA (Large Language Model Meta AI)**: Meta's open-source models
-- **Claude**: Anthropic's models
-- **Gemini**: Google's multimodal models
-
-LLM capabilities include text generation, question answering, translation, summarization, code generation, conversational AI, and few-shot learning. Limitations: they can generate incorrect or "hallucinated" information, reflect training data biases, are limited to knowledge from their training cutoff date, require significant computational resources, and can be sensitive to input phrasing.
 
 ---
 

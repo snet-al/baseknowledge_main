@@ -8,7 +8,7 @@ This directory contains resources and tutorials for learning essential Python li
 
 Pandas is Python's most popular library for data manipulation and analysis. It provides powerful tools for working with structured data (DataFrames and Series).
 
-**Start here**: Check out the [Pandas tutorial](./Pandas/) with comprehensive Jupyter notebooks and practice datasets.
+**Start here**: Check out the [Pandas tutorial](./Pandas/) with comprehensive Jupyter notebook and practice datasets.
 
 ---
 
