@@ -49,10 +49,11 @@ A fully structured roadmap to learn everything from mathematics to AGI-level con
 
 ## 1. Python for AI
 
-- NumPy
-- Pandas
-- Matplotlib
+- NumPy + SciPy + CuPy
+- Pandas + Polars
+- Matplotlib + Seaborn
 - Scikit-learn
+- StatsModels
 
 ## 2. Advanced Programming
 
