@@ -73,8 +73,8 @@ Here are some excellent YouTube channels and playlists for learning Python:
 ## Next Steps
 
 Once you're comfortable with Python basics, you can move on to:
-- **[Python AI Libraries](../Python%20AI%20Libraries/)**: Learn AI libraries and frameworks
-- **[Literature](../Literature/)**: Study AI/ML theory and concepts
+- **[Python AI Libraries](../1.%20Python%20AI%20Libraries/)**: Learn AI libraries and frameworks
+- **[Literature I](../2.%20Literature-III/)** & **[Literature II](../2.%20Literature-IV/)**: Study AI/ML theory and concepts
 
 Happy coding! 🐍
 
