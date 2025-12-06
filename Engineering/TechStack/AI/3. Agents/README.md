@@ -117,108 +117,73 @@ Enable LLMs to interact with external tools and APIs.
 
 ---
 
-## 4. Agent Frameworks: LangChain, CrewAI, AutoGen
+## 4. Chaining LLM Calls
 
-Build reactive agents using popular frameworks.
+Learn to chain multiple LLM calls together to solve complex problems step by step.
 
-### LangChain
+### Chain Types
 
-- **Core Concepts**
+- **Sequential Chains**
 
-  - Chains & agents
-  - Memory management
-  - Document loaders
-  - Output parsers
-
-- **Agent Types**
-
-  - ReAct agents
-  - Plan-and-execute agents
-  - Self-ask with search
-  - Custom agent creation
-
-- **Tools & Integrations**
-  - Built-in tools
-  - Custom tool creation
-  - Toolkits (SQL, Python, etc.)
-  - LangSmith for debugging
-
-### CrewAI
-
-- **Multi-Agent Systems**
-
-  - Crew orchestration
-  - Role definition
-  - Task delegation
-  - Agent collaboration
-
-- **Features**
-  - Sequential & hierarchical crews
-  - Agent memory & context
-  - Tool sharing
-  - Process management
-
-### AutoGen
-
-- **Conversation Patterns**
-
-  - Multi-agent conversations
-  - Group chat orchestration
-  - Human-in-the-loop
-  - Code execution agents
-
-- **Advanced Features**
-  - Customizable agents
-  - Conversation patterns
-  - Cost optimization
-  - Agent workflows
-
----
-
-## 5. Multiple LLM Calls & Problem Solving
-
-Orchestrate multiple LLM interactions to solve complex problems.
-
-### Strategies
-
-- **Sequential Calls**
-
+  - Output of one call feeds into the next
   - Breaking down complex tasks
   - Passing context between calls
   - Intermediate result processing
-  - Error recovery
 
-- **Parallel Calls**
+- **Parallel Chains**
 
   - Concurrent API requests
   - Result aggregation
-  - Cost vs speed trade-offs
-  - Rate limit management
+  - Fan-out / fan-in patterns
+  - Independent subtask processing
 
-- **Multi-Step Reasoning**
+- **Conditional Chains**
 
-  - Planning & execution
-  - Iterative refinement
+  - Branching based on LLM output
+  - Dynamic routing
+  - Fallback chains
+  - Error handling paths
+
+- **Iterative Chains**
   - Self-correction loops
-  - Validation steps
+  - Refinement until criteria met
+  - Validation & retry patterns
+  - Convergence strategies
 
-- **Problem-Solving Patterns**
-  - Decomposition strategies
-  - Parallel processing
-  - Voting & consensus
-  - Specialized agent roles
+### Chain Patterns
+
+- **Prompt Chaining**
+
+  - Decompose complex prompts
+  - Step-by-step reasoning
+  - Context accumulation
+  - Result synthesis
+
+- **Transform Chains**
+
+  - Input → Process → Output
+  - Data extraction pipelines
+  - Multi-stage summarization
+  - Translation chains
+
+- **Router Chains**
+  - Classify input type
+  - Route to specialized chains
+  - Expert selection
+  - Dynamic chain selection
 
 ### Implementation
 
+- Passing state between calls
+- Context window management
 - Async/await patterns
-- Request batching
-- Caching strategies
-- State management
-- Progress tracking
+- Caching intermediate results
+- Cost optimization
+- Progress tracking & logging
 
 ---
 
-## 6. Vector Databases & RAG (Retrieval-Augmented Generation)
+## 5. Vector Databases & RAG (Retrieval-Augmented Generation)
 
 Enable agents to access and retrieve information from knowledge bases using vector databases.
 
@@ -308,7 +273,6 @@ Enable agents to access and retrieve information from knowledge bases using vect
 
 - **Integration with Agents**
   - RAG as a tool for agents
-  - LangChain RAG chains
   - Context window management
   - Source citation
   - Handling retrieval failures
@@ -321,6 +285,65 @@ Enable agents to access and retrieve information from knowledge bases using vect
 - Query performance tuning
 - Cost management
 - Accuracy vs speed trade-offs
+
+---
+
+## 6. Agent Frameworks: LangChain, CrewAI, AutoGen
+
+Build reactive agents using popular frameworks. Now that you understand the raw patterns, leverage frameworks to accelerate development.
+
+### LangChain
+
+- **Core Concepts**
+
+  - Chains & agents
+  - Memory management
+  - Document loaders
+  - Vector stores & retrievers
+  - Output parsers
+
+- **Agent Types**
+
+  - ReAct agents
+  - Plan-and-execute agents
+  - Self-ask with search
+  - Custom agent creation
+
+- **Tools & Integrations**
+  - Built-in tools
+  - Custom tool creation
+  - Toolkits (SQL, Python, etc.)
+  - LangSmith for debugging
+
+### CrewAI
+
+- **Multi-Agent Systems**
+
+  - Crew orchestration
+  - Role definition
+  - Task delegation
+  - Agent collaboration
+
+- **Features**
+  - Sequential & hierarchical crews
+  - Agent memory & context
+  - Tool sharing
+  - Process management
+
+### AutoGen
+
+- **Conversation Patterns**
+
+  - Multi-agent conversations
+  - Group chat orchestration
+  - Human-in-the-loop
+  - Code execution agents
+
+- **Advanced Features**
+  - Customizable agents
+  - Conversation patterns
+  - Cost optimization
+  - Agent workflows
 
 ---
 
@@ -376,9 +399,9 @@ Build complex, stateful agent workflows with LangGraph.
 1. Start with **LLM Providers** – Get comfortable with APIs
 2. Master **Prompt Engineering** – Learn to communicate effectively
 3. Add **Tool Calls** – Extend LLM capabilities
-4. Explore **Frameworks** – Build your first agents
-5. Scale with **Multiple Calls** – Solve complex problems
-6. Learn **Vector Databases & RAG** – Give agents access to knowledge bases
+4. Learn **Chaining LLM Calls** – Combine calls for complex tasks
+5. Explore **Vector Databases & RAG** – Add knowledge retrieval
+6. Use **Frameworks** – Now you understand what they abstract
 7. Advanced: **LangGraph** – Build production-ready workflows
 
 ### Practice Projects
@@ -386,8 +409,9 @@ Build complex, stateful agent workflows with LangGraph.
 - Simple chatbot with API
 - Prompt optimization challenge
 - Tool-using agent (calculator, search, etc.)
+- Chained summarization pipeline (e.g., document → extract → summarize)
 - RAG-powered Q&A agent with vector database
-- Multi-agent system (e.g., research team)
+- Multi-agent system with CrewAI (e.g., research team)
 - Complex workflow with LangGraph
 
 ---
