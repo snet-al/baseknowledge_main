@@ -31,6 +31,14 @@ Learn to interact with major LLM providers through their APIs.
   - System prompts & messages
   - Token limits & usage
 
+- **Ollama** - Local LLM Runtime
+  - Installing and running Ollama
+  - Pulling and managing LLM models
+  - Using the Ollama API
+  - Running models locally
+  - Integrating with Python applications
+  - Privacy and offline capabilities
+
 ### Key Concepts
 
 - API keys & environment variables
@@ -349,7 +357,7 @@ Build reactive agents using popular frameworks. Now that you understand the raw 
 
 ## 7. LangGraph
 
-Build complex, stateful agent workflows with LangGraph.
+Build complex, stateful agent workflows with LangGraph. It is a library for building stateful, multi-actor applications with LLMs. It helps you create complex AI agents that can handle multi-step reasoning and workflows.
 
 ### Core Concepts
 
@@ -413,6 +421,30 @@ Build complex, stateful agent workflows with LangGraph.
 - RAG-powered Q&A agent with vector database
 - Multi-agent system with CrewAI (e.g., research team)
 - Complex workflow with LangGraph
+
+### Comprehensive Courses
+
+- **[Hugging Face AI Agents Course](https://huggingface.co/learn/agents-course/en/unit0/introduction)** - Free comprehensive course covering AI agents from beginner to expert. Learn theory, design, and practice using libraries like smolagents, LlamaIndex, and LangGraph. Includes foundational units, hands-on exercises, use case assignments, and challenges with a leaderboard. Earn certificates upon completion.
+
+- **[Building Systems with the ChatGPT API (DeepLearning.AI)](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)** - Free 1-hour 45-minute course by Isa Fulford (OpenAI) and Andrew Ng. Learn to build multi-step systems using LLMs, chain prompts, evaluate LLM inputs/outputs, and build a customer service chatbot. Covers classification, moderation, chain-of-thought reasoning, and evaluation techniques.
+
+### Ollama Learning Resources
+
+- **[Ollama Documentation](https://ollama.ai/docs)** - Official documentation with installation and usage guides
+- **[Ollama Python Library](https://github.com/ollama/ollama-python)** - Official Python client for integrating Ollama with Python applications
+- **[Ollama GitHub Examples](https://github.com/ollama/ollama/tree/main/examples)** - Example code and integrations
+
+### LangGraph Learning Resources
+
+- **[LangChain Academy - Intro to LangGraph](https://academy.langchain.com/courses/intro-to-langgraph)** - Free structured course for learning LangGraph
+- **[LangGraph Documentation](https://langchain-ai.github.io/langgraph/)** - Official documentation with detailed API information and tutorials
+- **[LangGraph Complete Course for Beginners](https://www.classcentral.com/course/freecodecamp-langgraph-complete-course-for-beginners-complex-ai-agents-with-python-453457)** - Free video course on building complex AI agents
+- **[agent-service-toolkit](https://github.com/JoshuaC215/agent-service-toolkit)** - Complete production example using LangGraph, FastAPI, and Streamlit. Shows how to:
+  - Set up LangGraph agents (including with Ollama support)
+  - Build a FastAPI service for agent deployment
+  - Create a Streamlit chat interface
+  - Implement streaming, memory, and human-in-the-loop features
+  - Deploy agents with Docker
 
 ---
 
