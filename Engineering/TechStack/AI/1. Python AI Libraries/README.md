@@ -28,44 +28,41 @@ NumPy is the fundamental package for numerical computing in Python. It provides 
 
 ---
 
-### 4. **Ollama** - Local LLM Runtime
+### 4. **Matplotlib & Seaborn** - Data Visualization
 
-Ollama allows you to run large language models (LLMs) locally on your machine. It's perfect for AI applications that need to work offline or with privacy concerns.
+Matplotlib and Seaborn are essential libraries for creating visualizations and plots in Python. They help you explore data, communicate insights, and create publication-quality figures.
 
 **What you'll learn:**
-- Installing and running Ollama
-- Pulling and managing LLM models
-- Using the Ollama API
-- Running models locally
-- Integrating with Python applications
+- Creating basic plots (line, bar, scatter, histogram)
+- Customizing plots (colors, labels, legends, titles)
+- Subplots and figure layouts
+- Statistical visualizations with Seaborn
+- Heatmaps, pair plots, and distribution plots
+- Exporting plots to various formats
 
-**Start here**: Check out the [Ollama documentation](https://ollama.ai/docs) for installation and usage guides.
+**Free Resources:**
+- [Matplotlib Documentation](https://matplotlib.org/stable/contents.html) - Official documentation with tutorials and examples
+- [Seaborn Documentation](https://seaborn.pydata.org/) - Statistical data visualization library
+- [Matplotlib Tutorials](https://matplotlib.org/stable/tutorials/index.html) - Comprehensive tutorials
 
 ---
 
-### 5. **LangGraph** - AI Agent Orchestration
+### 5. **scikit-learn** - Machine Learning
 
-LangGraph is a library for building stateful, multi-actor applications with LLMs. It helps you create complex AI agents that can handle multi-step reasoning and workflows.
+scikit-learn is a machine learning library that provides simple and efficient tools for data mining and data analysis. Learn to build and train basic ML models.
 
 **What you'll learn:**
-- Building stateful AI agents
-- Creating multi-step workflows
-- Agent orchestration patterns
-- Integrating with LLMs
-- Building complex AI applications
-- State management and memory
-- Human-in-the-loop workflows
-- Deployment strategies
+- Supervised learning (classification, regression)
+- Unsupervised learning (clustering, dimensionality reduction)
+- Model evaluation and validation
+- Feature engineering and preprocessing
+- Model selection and hyperparameter tuning
+- Pipeline creation
 
-**Start here**: 
-- Take the free [LangChain Academy course](https://academy.langchain.com/courses/intro-to-langgraph) for a structured learning path 
-- Reference the [LangGraph documentation](https://langchain-ai.github.io/langgraph/) for detailed API information
-- Explore the [agent-service-toolkit](https://github.com/JoshuaC215/agent-service-toolkit) for a complete production example using LangGraph, FastAPI, and Streamlit. This repository shows how to:
-  - Set up LangGraph agents (including with Ollama support)
-  - Build a FastAPI service for agent deployment
-  - Create a Streamlit chat interface
-  - Implement streaming, memory, and human-in-the-loop features
-  - Deploy agents with Docker
+**Free Resources:**
+- [scikit-learn Documentation](https://scikit-learn.org/stable/) - Official documentation with tutorials
+- [scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html) - Comprehensive guide
+- [Machine Learning with scikit-learn](https://scikit-learn.org/stable/getting_started.html) - Getting started guide
 
 ---
 
