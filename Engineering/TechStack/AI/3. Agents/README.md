@@ -432,7 +432,6 @@ Build complex, stateful agent workflows with LangGraph. It is a library for buil
 
 - **[Ollama Documentation](https://ollama.ai/docs)** - Official documentation with installation and usage guides
 - **[Ollama Python Library](https://github.com/ollama/ollama-python)** - Official Python client for integrating Ollama with Python applications
-- **[Ollama GitHub Examples](https://github.com/ollama/ollama/tree/main/examples)** - Example code and integrations
 
 ### LangGraph Learning Resources
 

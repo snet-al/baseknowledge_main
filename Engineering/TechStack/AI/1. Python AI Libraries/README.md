@@ -62,7 +62,6 @@ scikit-learn is a machine learning library that provides simple and efficient to
 **Free Resources:**
 - [scikit-learn Documentation](https://scikit-learn.org/stable/) - Official documentation with tutorials
 - [scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html) - Comprehensive guide
-- [scikit-learn Tutorials](https://scikit-learn.org/stable/tutorial/index.html) - Step-by-step tutorials
 - [Machine Learning with scikit-learn](https://scikit-learn.org/stable/getting_started.html) - Getting started guide
 
 ---
