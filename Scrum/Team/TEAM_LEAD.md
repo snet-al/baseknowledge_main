@@ -2,16 +2,16 @@
 
 ## 1. Role Overview
 
-The Technical Team Leader (TTL) is the single point of accountability for a specific product team. This is a "Heavyweight" leadership role that combines **People Management**, **Technical Architecture**
+The Technical Team Leader (TTL) is the single point of accountability for a specific technology team, or as will be defined and Vertical Team in the matrix of management. This is a "Heavyweight" leadership role that combines **People Management**, **Technical Management**
 
 **Core Mission:** To build a high-performing team of engineers while ensuring the software they build is scalable, modern, and aligned with the company’s technical vision.
 
 ---
 
-## 2. Technical Leadership & Strategy (The Architect)
+## 2. Technical Leadership & Strategy
 
 - **Technology Selection:** Evaluate and define the tech stack, frameworks, and third-party tools. You ensure the stack is fit-for-purpose and future-proof.
-- **Architectural Ownership:** Lead the design of complex systems and microservices. You hold the final decision-making power (DRI) on technical disputes.
+- **Architectural Ownership:** Lead the design of complex systems and microservices. You hold the final decision-making power (DRI) on technical disputes. This responsibility is added by default to the TTL, but if the projects become larger, the role of TECH LEAD emerges per project.
 - **Standards & Quality:** Enforce "Clean Code" principles, automated testing strategies, and robust CI/CD pipelines.
 - **Technical Debt Management:** Balance the trade-off between shipping features quickly and maintaining a healthy, refactored codebase.
 
@@ -19,7 +19,7 @@ The Technical Team Leader (TTL) is the single point of accountability for a spec
 
 ## 3. People Management & Growth (The Mentor)
 
-- **Career Development:** Conduct weekly 1-on-1s. You are responsible for the performance reviews, salary adjustments, and promotion paths of your team.
+- **Career Development:** Conduct weekly 1-on-1s(or defined by TL). You are responsible for the performance reviews, salary adjustments, and promotion paths of your team.
 - **Defining the Learning Path:** You are responsible for the team’s "Skill Matrix." You identify skill gaps and define the curriculum for engineers to learn new technologies (e.g., Cloud Native patterns, new languages, or AI integration).
 - **Technical Coaching:** Actively mentor engineers through pair programming and architectural whiteboarding sessions.
 - **Culture of Excellence:** Foster an environment of psychological safety where the best technical idea wins, regardless of seniority.
