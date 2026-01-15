@@ -15,6 +15,20 @@ So the first rule of clean code is:
 ### Part 1. Meaningful Names
 
 > The name of a variable, function, or class, should answer all the big questions. It should tell you why it exists, what it does, and how it is used. If a name requires a comment, then the name does not reveal its intent.
+Naming is the base of programing.
+- Why
+
+When asking why a name exist, we are asking first its `layer of abstraction`.
+For example: PersonEntity, (or simply Person in some cases) -> tells that its a domain logic so tells us what should it know. If in that class we add `SQL` meand that the class know also another thing other then domain, so we are violating the rule of SRP.
+
+- What
+
+Also what a variable, class, etc etc, by his name should tell us what it does.
+
+- How
+
+This is combined with Why, so we have as much knowledge as possible on what insights the content of a variable, class, function should have.
+  
 
 1. Explicitly<br>
    As cited in the clean code book, the variables for example should not be clean as in
