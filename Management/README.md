@@ -1,10 +1,12 @@
 # 📑 Standardized Project Initiation Framework
 
+## 0. This is a document which is followed by the PM after the PMO has confirmed the Project Charter
+
 ## 1. Centralized Knowledge Base
 
-* **Resource Location**: Store all templates, guides, and references in a centralized repository (Google Drive main folder or internal Wiki).
-* **Access**: All team members have read access, edit rights restricted.
-* **Version Control**: Ensure consistency with version control (GitHub repo for templates).
+- **Resource Location**: Store all templates, guides, and references in a centralized repository (Google Drive main folder or internal Wiki).
+- **Access**: All team members have read access, edit rights restricted.
+- **Version Control**: Ensure consistency with version control (GitHub repo for templates).
 
 ---
 
@@ -47,9 +49,9 @@
 
 **Checklist**:
 
-* [ ] Each requirement mapped to at least one task.
-* [ ] Each task is atomic (smallest evaluable unit).
-* [ ] Task effort aligns with internal **evaluation chart**.
+- [ ] Each requirement mapped to at least one task.
+- [ ] Each task is atomic (smallest evaluable unit).
+- [ ] Task effort aligns with internal **evaluation chart**.
 
 **Deliverable**: Excel Breakdown + CE Draft.
 **Quality Check**: PM + Tech Lead joint validation.
@@ -58,23 +60,23 @@
 
 ### 🔹 **Phase 2: Agreement with Client**
 
-* **Steps**:
+- **Steps**:
 
-  * Draft **Project Initiation Document (PID)** using CE and TOR as baseline.
-  * Include pre-planning, scope, general estimation.
-  * Review iteratively with client.
+  - Draft **Project Initiation Document (PID)** using CE and TOR as baseline.
+  - Include pre-planning, scope, general estimation.
+  - Review iteratively with client.
 
-* **Deliverable**: Signed PID.
+- **Deliverable**: Signed PID.
 
-* **Quality Check**: PM + Client approval.
+- **Quality Check**: PM + Client approval.
 
 ---
 
 ### 🔹 **Phase 3: Project Initiation**
 
-* Setup ClickUp (assign members, workflow).
-* Draft **Project Plan** in Excel (templates).
-* Validate with Team Lead.
+- Setup ClickUp (assign members, workflow).
+- Draft **Project Plan** in Excel (templates).
+- Validate with Team Lead.
 
 **Deliverable**: Approved Project Plan.
 **Quality Check**: Team Lead review.
@@ -83,9 +85,9 @@
 
 ### 🔹 **Phase 4: Project Development (Backlog & Execution)**
 
-* Create backlog in ClickUp based on Project Plan.
-* Write tasks using Scrum Task Template.
-* Share backlog with client for approval.
+- Create backlog in ClickUp based on Project Plan.
+- Write tasks using Scrum Task Template.
+- Share backlog with client for approval.
 
 **Deliverable**: Approved backlog.
 **Quality Check**: Scrum Master + PO validation.
@@ -94,9 +96,9 @@
 
 ### 🔹 **Phase 5: Retrospective**
 
-* Run retrospective session after project completion.
-* Collect client + team feedback.
-* Document lessons learned in Knowledge Base.
+- Run retrospective session after project completion.
+- Collect client + team feedback.
+- Document lessons learned in Knowledge Base.
 
 **Deliverable**: Retrospective Report.
 **Quality Check**: PM approval.
@@ -105,33 +107,31 @@
 
 ## 4. Supporting Elements
 
-* **Validation Checkpoints**:
+- **Validation Checkpoints**:
 
-  * Phase 0 → Folder completeness.
-  * Phase 1 → CE validated by PM + Tech Lead.
-  * Phase 2 → PID client sign-off.
-  * Phase 3 → Project Plan validation.
-  * Phase 4 → Client approval of backlog.
-  * Phase 5 → Retrospective recorded.
+  - Phase 0 → Folder completeness.
+  - Phase 1 → CE validated by PM + Tech Lead.
+  - Phase 2 → PID client sign-off.
+  - Phase 3 → Project Plan validation.
+  - Phase 4 → Client approval of backlog.
+  - Phase 5 → Retrospective recorded.
 
-* **Risk Management**:
+- **Risk Management**:
 
-  * Risks identified during CE (Phase 1) and PID (Phase 2).
-  * Mitigation strategies logged in PID.
+  - Risks identified during CE (Phase 1) and PID (Phase 2).
+  - Mitigation strategies logged in PID.
 
-* **Automation & Tools**:
+- **Automation & Tools**:
 
-  * **SNET Projects Drive** → Docs repository.
-  * **Excel** → Breakdown & CE.
-  * **ClickUp** → Project & backlog tracking.
-  * **GitHub** → Version control of templates.
+  - **SNET Projects Drive** → Docs repository.
+  - **Excel** → Breakdown & CE.
+  - **ClickUp** → Project & backlog tracking.
+  - **GitHub** → Version control of templates.
 
 ---
 
 ⚡ With this update:
 
-* **PM is always the first entry point**.
-* **CE cannot exist without a structured breakdown**.
-* **Company-wide task unit chart ensures consistency** across all estimates.
-
-
+- **PM is always the first entry point**.
+- **CE cannot exist without a structured breakdown**.
+- **Company-wide task unit chart ensures consistency** across all estimates.
