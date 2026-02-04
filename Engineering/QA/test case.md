@@ -10,17 +10,17 @@ A test case is a set of actions that verify whether the software application is 
 
 **Performance Testing:** Performance testing assesses the software's performance characteristics, such as its responsiveness, scalability, and resource usage under various workload conditions. It aims to identify performance bottlenecks, measure response times, and determine if the system meets the desired performance criteria. Performance testing can include load testing, stress testing, and endurance testing.
 
-**Boundary Testing is a software testing technique that checks how a system behaves at the limits of allowed values. 
+Boundary Testing is a software testing technique that checks how a system behaves at the limits of allowed values. 
 
-**It focuses on testing:
-**-minimum value
-**-just below minimum
-**-just above minimum
-**-maximum value
-**-just below maximum
-**-just above maximum
+It focuses on testing:
+-minimum value
+-just below minimum
+-just above minimum
+-maximum value
+-just below maximum
+-just above maximum
 
-**Most defects occur at boundaries, not in the middle.
+Most defects occur at boundaries, not in the middle.
 
 **Security Testing:** Security testing focuses on identifying vulnerabilities and weaknesses in the software's security mechanisms. It involves testing for potential threats, unauthorized access, data breaches, and confidentiality issues. Security testing aims to ensure that the software has appropriate measures in place to protect sensitive data and maintain the integrity of the system.
 
