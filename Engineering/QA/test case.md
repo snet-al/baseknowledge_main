@@ -15,15 +15,10 @@ A test case is a set of actions that verify whether the software application is 
 It focuses on testing:
 
 -minimum value
-
 -just below minimum
-
 -just above minimum
-
 -maximum value
-
 -just below maximum
-
 -just above maximum
 
 Most defects occur at boundaries, not in the middle.
