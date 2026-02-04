@@ -9,6 +9,16 @@ A test case is a set of actions that verify whether the software application is 
 **Regression Testing:** Regression testing is performed to ensure that modifications or enhancements to the software do not introduce new defects or break existing functionality. It involves retesting previously tested areas to validate that the changes have not caused any adverse impacts. Regression testing helps maintain software stability and reliability over time.
 
 **Performance Testing:** Performance testing assesses the software's performance characteristics, such as its responsiveness, scalability, and resource usage under various workload conditions. It aims to identify performance bottlenecks, measure response times, and determine if the system meets the desired performance criteria. Performance testing can include load testing, stress testing, and endurance testing.
+**Boundary Testing is a software testing technique that checks how a system behaves at the limits of allowed values. 
+It focuses on testing:
+minimum value
+just below minimum
+just above minimum
+maximum value
+just below maximum
+just above maximum
+
+Most defects occur at boundaries, not in the middle.
 
 **Security Testing:** Security testing focuses on identifying vulnerabilities and weaknesses in the software's security mechanisms. It involves testing for potential threats, unauthorized access, data breaches, and confidentiality issues. Security testing aims to ensure that the software has appropriate measures in place to protect sensitive data and maintain the integrity of the system.
 
