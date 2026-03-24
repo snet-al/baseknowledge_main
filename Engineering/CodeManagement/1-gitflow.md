@@ -1,13 +1,13 @@
 ### Branches created by developers
 
-`feature`
+`feature` | `feat`
 
 - For new functionality
 
 - Branches off of `develop`
 
-- Naming: `feature/<developer_initials>/<branch_description>`  
-    - Example: `feature/er/new_endpoint_to_check_stock`
+- Naming: `feature/<developer_initials>/<branch_description>`
+  - Example: `feature/er/new_endpoint_to_check_stock`
 
 `bugfix`
 
@@ -17,7 +17,7 @@
 
 - Naming: `bugfix/<developer_initials>/<branch_description>`
 
-    - Example: `bugfix/er/add_missing_api_config`
+  - Example: `bugfix/er/add_missing_api_config`
 
 `refactor`
 
@@ -27,7 +27,7 @@
 
 - Naming: `refactor/<developer_initials>/<branch_description>`
 
-    - Example: `refactor/er/change_api_service`
+  - Example: `refactor/er/change_api_service`
 
 `hotfix`
 
@@ -37,7 +37,7 @@
 
 - Naming: `hotfix/<developer_initials>/<branch_description>`
 
-    - Example: `hotfix/er/add_missing_api_config`
+  - Example: `hotfix/er/add_missing_api_config`
 
 ### Release branch created only by release manager.
 
@@ -49,7 +49,7 @@
 
 - Naming: `release/<version>`
 
-    - Example: `release/v1.0`
+  - Example: `release/v1.0`
 
 ### Base branches
 
@@ -68,3 +68,11 @@
 - Your “working” code
 
 - Lives forever
+
+### Commit conventions
+
+- use same convetions also for messages
+
+  `git commit -m"feat: expain what part of the feature you did"`
+
+  `git commit -m"fix: at least add the ':' after fix"`
