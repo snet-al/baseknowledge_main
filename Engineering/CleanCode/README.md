@@ -77,7 +77,7 @@ The second rule is that they should be smaller than that
 
 5. Number of arguments
    <br>
-   The ideal number of arguments for a function maximum of three, but less is better.
+   The ideal number of arguments for a function is 0.
 6. Prefer Exception instead of returning error codes
 7. DRY principle (Dont repeat yourself)
 8. Structured programing
