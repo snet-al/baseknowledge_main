@@ -113,3 +113,5 @@ The increment is a step toward a vision or goal. The increment must be in useabl
 
 ### 4. Request Analysis and Client Management
 
+When receiving a new request (feature, improvement, or bug fix), the Product Owner is responsible for performing a structured analysis before introducing it into the Product Backlog. This process ensures that all requests are aligned with business goals, technically reachable, and clearly defined for the Development Team.
+
