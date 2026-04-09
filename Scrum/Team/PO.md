@@ -110,3 +110,6 @@ The Development Team tracks this total work remaining at least for every Daily S
 #### 3.3 Increment
 
 The increment is a step toward a vision or goal. The increment must be in useable condition. Product Owner decides to release it or not.
+
+### 4. Request Analysis and Client Management
+
