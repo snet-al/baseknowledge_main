@@ -113,5 +113,54 @@ The increment is a step toward a vision or goal. The increment must be in useabl
 
 ### 4. Request Analysis and Client Management
 
-When receiving a new request (feature, improvement, or bug fix), the Product Owner is responsible for performing a structured analysis before introducing it into the Product Backlog. This process ensures that all requests are aligned with business goals, technically reachable, and clearly defined for the Development Team.
+When receiving a new request (feature, improvement, or bug fix), the Product Owner is responsible for performing a structured analysis before introducing it into the Product Backlog. 
+This process ensures that all requests are aligned with business goals, technically reachable, and clearly defined for the Development Team.
 
+#### 4.1 Request Analysis
+
+Request Analysis includes:
+
+**Understanding the request**
+
+- Clarifying the business need and expected outcome
+- Identifying the client and their objectives
+- Determining whether the request is a new feature, change, or defect
+
+**Impact analysis**
+
+- Evaluating the impact on existing functionality
+- Identifying dependencies with other features or modules
+- Assessing risks related to performance, security, and usability
+
+**Environment consideration**
+
+- Analyzing how the change will behave across different environments
+- Ensuring compatibility with existing configurations and data
+- Identifying environment-specific constraints or required adaptations
+
+**Business value and prioritization**
+
+- Estimating the value the request brings to the product or stakeholders
+- Comparing it with existing Product Backlog items
+- Deciding its priority based on urgency, value, and strategic alignment
+
+**Defining requirements**
+
+- Translating the request into clear Product Backlog items
+- Defining acceptance criteria
+- Ensuring the item is ready for development (refined and understandable)
+
+#### 4.2 Client communication and negotiation
+
+The Product Owner is responsible for managing client expectations and negotiating scope and priorities when necessary.
+This includes:
+
+- Aligning clients on what will be delivered and when
+- Negotiating trade-offs between scope, time, and quality
+- Managing conflicting requests from different clients
+- Communicating technical or business constraints
+- Providing realistic timelines based on team capacity and complexity
+- Ensuring that clients understand the impact of changes on the overall product roadmap
+
+The Product Owner acts as the main point of contact between clients and the Development Team, ensuring that all decisions maximize product value while maintaining a sustainable development pace.
+  
