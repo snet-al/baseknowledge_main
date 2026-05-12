@@ -102,6 +102,8 @@ This is also the case for the Sprint Goal. Every day the product owner should ch
 The Sprint Backlog is the set of Product Backlog items selected for the Sprint, plus a plan for delivering the product Increment and realizing the Sprint Goal.
 Sprint backlog belongs to the development team not to the product owner.
 The Development Team modifies the Sprint Backlog throughout the Sprint, and the Sprint Backlog emerges during the Sprint. This emergence occurs as the Development Team works through the plan and learns more about the work needed to achieve the Sprint Goal.
+The Product Owner is responsible for defining and maintaining a clear Product Goal, which represents the long-term objective of the product.
+The Product Goal guides the Product Backlog and ensures that all Product Backlog items contribute to a shared vision and strategic direction.
 
 _Monitoring Sprint Progress_
 
@@ -109,4 +111,72 @@ The Development Team tracks this total work remaining at least for every Daily S
 
 #### 3.3 Increment
 
-The increment is a step toward a vision or goal. The increment must be in useable condition. Product Owner decides to release it or not.
+The Increment is a step toward the Product Goal and must meet the Definition of Done.
+It must be in a usable and potentially releasable condition, meaning it is fully developed, tested, and integrated.
+The Development Team is responsible for ensuring that the Increment meets the Definition of Done, while the Product Owner decides whether and when to release it.
+
+### 4. Request Analysis and Stakeholder/Client Management
+
+Requests may originate from stakeholders at any time and are continuously analyzed and refined before being introduced into the Product Backlog.
+This process ensures that all requests are aligned with business goals, technically reachable, and clearly defined for the Development Team.
+
+#### 4.1 Request Analysis
+
+Request Analysis includes:
+
+**Understanding the request**
+
+- Clarifying the business need and expected outcome
+- Identifying the stakeholder/client and their objectives
+- Determining whether the request is a new feature, change, or defect
+
+**Impact analysis**
+
+- Evaluating the impact on existing functionality
+- Identifying dependencies with other features or modules
+- Assessing risks related to performance, security, and usability
+
+**Environment consideration**
+
+- Analyzing how the change will behave across different environments
+- Ensuring compatibility with existing configurations and data
+- Identifying environment-specific constraints or required adaptations
+
+**Business value and prioritization**
+
+- Estimating the value the request brings to the product or stakeholders
+- Comparing it with existing Product Backlog items
+- Deciding its priority based on urgency, value, and strategic alignment
+- Collaborating with the Development Team to estimate effort and complexity
+
+**Defining requirements**
+
+- Translating the request into clear Product Backlog items
+- Defining acceptance criteria
+- Ensuring the item is ready for development (refined and understandable)
+
+The Product Owner ensures that prioritized items support the Sprint Goal and align with the overall Product Goal.
+
+#### 4.2 Stakeholder/Client communication and negotiation
+
+The Product Owner is responsible for managing stakeholder/client expectations and negotiating scope and priorities when necessary.
+This includes:
+
+- Aligning stakeholders/clients on what will be delivered and when
+- Negotiating trade-offs between scope, time, and quality
+- Managing conflicting requests from different stakeholders/clients
+- Communicating technical or business constraints
+- Providing realistic timelines based on team capacity and complexity
+- Ensuring that stakeholders/clients understand the impact of changes on the overall product roadmap
+
+The Product Owner acts as the main point of contact between stakeholders/clients and the Development Team, ensuring that all decisions maximize product value while maintaining a sustainable development pace.
+  
+#### 4.3 Product Backlog Refinement
+
+Product Backlog refinement is an ongoing activity where the Product Owner collaborates with the Development Team to clarify, split, and prepare Product Backlog items.
+
+This includes:
+- Breaking down large items into smaller, manageable tasks
+- Clarifying requirements and acceptance criteria
+- Ensuring items are well understood by the Development Team
+- Preparing items to be ready for upcoming Sprints
