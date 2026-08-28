@@ -191,6 +191,21 @@ The second rule is that they should be smaller than that
    The importance of this usage of variables is the separation of funciton calls, as we noticed we have a console.log function which in our code should be considered an external communication, so we have to call external functions as little as possible.
 
 
+### Part 3. SOLID Principles, As stated in the MultiSpace every priciple should be part of the analysis of code, but at least these must be mandatory:
+
+#### - SRP Single responsibility principle
+When implementing a feature its very important to understand that, those features had two separate directions
+1. domain logic
+2. infrastructure into this feature is being implemented (tech stack, for example react)
+As the projects evolve if we bind to much the tech stack with domain, the upgrade becomes difficult, so its better that when we plan the feature, we define clearly those bounderies.
+Let me give you an example:
+An app in React, is implementing a Order management feature, and usually driven by the desire to use the techstack more that the desire to solve a real problem that the app should do,
+we go and implement the logic of total of order in an hook because it might be easier to rerender, we forget that logic of total has busines logic that might in the future, example adding discounts later.
+#### - Open Closed Principle
+#### - Liskov Principle
+#### - Interface Segregation Principle
+#### - Dependency Inversion Principle
+
 ### Part 3. Formatting
 Code formatting is important. Code formatting is about **communication**, and communication is the professional developer’s first order of business.
 
