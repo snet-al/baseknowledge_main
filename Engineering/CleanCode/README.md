@@ -520,26 +520,164 @@ The second rule is that they should be smaller than that.
    The importance of this variable is the separation of function calls.
    `console.log` should be considered external communication, so we should call external functions only as often as necessary.
 
-### Part 4. Formatting
+### Part 4. Formatting, Consistency, and Existing Projects
 
-Code formatting is important. Code formatting is about **communication**, and communication is the professional developer's first order of business.
+Code formatting is important because code is communication, and communication is one of the professional developer's first responsibilities.
 
-1. Keep files small, which commonly means about 200 lines per file and no more than 500.
+Formatting is broader than spaces, indentation, and line length. It also includes naming conventions, file organization, the position of functions, error-handling styles, architectural patterns, and the general way in which a project expresses its ideas.
 
-2. Do not make lines longer than 120 characters.
+When entering an existing project, the first responsibility of a developer is not to immediately introduce a preferred style, pattern, or new paradigm. The first responsibility is to understand the language that the project and its team already use.
 
-3. Use blank lines to separate package declarations, imports, and functions.
+> **In an existing codebase, consistency with the project is usually more valuable than local perfection.**
 
-4. Instance variables should be grouped in an easy-to-find, well-known place.
+A solution may be modern, elegant, or theoretically better in isolation and still make the complete system harder to understand when it is introduced only in one part of the project.
 
-5. Variables should generally be placed as close to their usage as possible.
+For example, imagine that an existing application organizes its code by technical responsibility:
 
-6. If one function calls another, they should be vertically close, and the caller should be above the called function.
+```text
+controllers/
+services/
+repositories/
+```
 
-7. Keep functions close if they are related.
+A developer may prefer a feature-based structure:
 
-8. Eliminate unnecessary or unhelpful alignment that draws attention to the wrong thing.
+```text
+user/
+product/
+orders/
+```
 
-9. Use whitespace between operators for readability. Otherwise, eliminate unnecessary whitespace, especially at the end of a line.
+The feature-based structure may be valid, but changing only one module creates two organizational languages inside the same project. A developer must now understand both structures and remember which rule applies in each part of the codebase.
 
-10. **Team Rules** — A team of developers should agree on a single formatting style, and every member of the team should use that style.
+The result may be locally cleaner code but a globally less coherent system.
+
+This gives us an important SNET engineering rule:
+
+> **Do not introduce a second architecture accidentally.**
+
+A new paradigm is not automatically better merely because it is newer. Before introducing it, we must understand:
+
+- What problem in the current project it solves.
+- Which software axis it improves.
+- Which quality attribute it targets.
+- What migration and learning cost it introduces.
+- Whether the team has agreed to use it consistently.
+- Whether the existing code can be migrated safely and incrementally.
+
+The correct process when entering an existing project is:
+
+```text
+Observe the existing project
+          ↓
+Understand its conventions and reasons
+          ↓
+Work consistently with what is already there
+          ↓
+Identify concrete problems, not only personal preferences
+          ↓
+Propose improvements to the team
+          ↓
+Adopt and migrate deliberately when there is agreement
+```
+
+This does not mean that an existing project should never change. Existing conventions can be incomplete, outdated, or harmful. However, improvements should be conscious architectural decisions rather than isolated personal decisions.
+
+#### Understand Before Changing
+
+Before creating or modifying code in an existing project, inspect similar parts of the codebase and understand:
+
+1. How files and folders are organized.
+2. How classes, functions, variables, and database objects are named.
+3. Where business logic is placed.
+4. How errors and exceptions are handled.
+5. How dependencies are created and passed.
+6. How data moves between layers.
+7. Which patterns are already used by the team.
+8. Which formatting and linting tools are enforced.
+
+Do not assume that a convention exists without a reason. Some decisions may reflect technical constraints, framework conventions, deployment requirements, backward compatibility, or previous team experience.
+
+At the same time, do not assume that every existing decision is correct. First understand it; then evaluate it.
+
+#### Distinguish Problems From Preferences
+
+A developer should distinguish between:
+
+```text
+A concrete project problem
+    High coupling, repeated defects, unclear ownership,
+    difficult changes, poor performance, or security risk.
+
+and
+
+A personal preference
+    A different folder name, syntax style, framework,
+    pattern, or paradigm that the developer likes more.
+```
+
+A concrete problem can justify a project-level change. A personal preference usually does not justify creating inconsistency.
+
+The burden of proof belongs to the proposed change. The developer proposing a new convention should explain the problem, the target quality, the trade-offs, and the migration path.
+
+#### Prefer Project Consistency by Default
+
+When the existing convention is reasonable and no broader change has been agreed upon:
+
+1. Follow the naming style already used by the project.
+2. Place new files where equivalent files are already placed.
+3. Use the existing architectural boundaries.
+4. Follow the established approach to dependencies and data flow.
+5. Match the surrounding formatting and code style.
+6. Avoid rewriting unrelated code only to match personal preferences.
+7. Keep the scope of each change focused and understandable.
+
+Consistency reduces cognitive load. A developer can learn one set of expectations and apply it across the codebase.
+
+#### Change Conventions Deliberately
+
+When a convention genuinely needs to change, the change should be explicit and coordinated.
+
+A deliberate convention change should normally include:
+
+1. A clearly described problem.
+2. The axis and quality attribute being improved.
+3. The expected benefits and trade-offs.
+4. Agreement from the responsible team members.
+5. A migration strategy for existing code.
+6. Documentation and examples of the new convention.
+7. Automated rules where possible.
+
+During a migration, temporary inconsistency may be unavoidable. It should be controlled by a clear boundary and a known direction, not created randomly.
+
+For example, a team may decide that all new modules use a feature-based structure while old modules are migrated one by one. In that case, the boundary and migration rule must be documented so that the project does not become permanently divided between two accidental styles.
+
+#### Formatting Rules
+
+After understanding the project's existing conventions, use the following rules where they do not conflict with an established team standard:
+
+1. Keep files focused and reasonably small. A common guideline is about 200 lines per file and no more than 500, but responsibility and clarity are more important than an exact number.
+
+2. Avoid unnecessarily long lines. A common limit is 120 characters unless the project defines another standard.
+
+3. Use blank lines to separate logical sections such as package declarations, imports, properties, and functions.
+
+4. Keep instance variables in a consistent and easy-to-find place.
+
+5. Place local variables as close to their usage as reasonably possible.
+
+6. If one function calls another, keep them vertically close when this improves the reading flow, with the caller normally above the called function.
+
+7. Keep related functions close to each other.
+
+8. Eliminate unnecessary alignment that draws attention to formatting rather than meaning.
+
+9. Use whitespace around operators where it improves readability, and remove unnecessary whitespace, especially at the end of a line.
+
+10. Use the project's formatter, linter, editor configuration, and static-analysis rules rather than manually applying a different personal style.
+
+11. **Team rules override individual preferences.** A team should agree on a consistent style, document it, automate it where possible, and apply it throughout the project.
+
+The final objective is not for every developer to leave their personal style in the codebase.
+
+The objective is for the codebase to read as if it were written by one coordinated team.
